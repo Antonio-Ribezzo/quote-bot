@@ -7,10 +7,80 @@
         <title>Quote BOT</title>
         <!-- link Bootstrap -->
         <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9'       crossorigin='anonymous'>
+        <!-- link font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
         <!-- link my style css -->
         <link rel='stylesheet' href='./assets/css/style.css'>
     </head>
     <body>
+        <header class="p-4 d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h1>
+                    Quote from a Bot
+                </h1>
+                <span class="text-center">
+                    Seleziona un personaggio e vedi cosa ha da dirti
+                </span>
+            </div>
+        </header>
+
+        <main class="pt-5">
+            <div class="d-flex justify-content-center align-items-start flex-wrap gap-3">
+                <!-- characters -->
+                <div class="characters rounded-circle">
+                    <img class="rounded-circle" src="./assets/img/ash-ketchum.png" alt="ash" width="100%">
+                </div>
+                <div class="characters rounded-circle">
+                    <img class="rounded-circle" src="./assets/img/batman.png" alt="batman" width="100%">
+                </div>
+                <div class="characters rounded-circle">
+                    <img class="rounded-circle" src="./assets/img/homer-simpson.png" alt="homer" width="100%">
+                </div>
+                <div class="characters rounded-circle">
+                    <img class="rounded-circle" src="./assets/img/hermione-granger.png" alt="hermione" width="100%">
+                </div>
+                <div class="characters rounded-circle">
+                    <img class="rounded-circle" src="./assets/img/gandalf.png" alt="gandalf" width="100%">
+                </div>
+                <div class="characters rounded-circle">
+                    <img class="rounded-circle" src="./assets/img/harley-quinn.png" alt="quinn" width="100%">
+                </div>
+                <div class="characters rounded-circle">
+                    <img class="rounded-circle" src="./assets/img//shrek.png" alt="shrek" width="100%">
+                </div>
+                <div class="characters rounded-circle">
+                    <img class="rounded-circle" src="./assets/img/barbie.png" alt="barbie" width="100%">
+                </div>
+                <div class="characters rounded-circle">
+                    <img class="rounded-circle" src="./assets/img/minion.png" alt="minion" width="100%">
+                </div>
+            </div>
+
+            <!-- loading -->
+            <div class="position-fixed d-flex justify-content-center align-items-center loading d-none">
+                <img src="./assets/img/loader.gif" alt="loader" width="100px">
+            </div>
+            <!-- fine loading -->
+
+            <!-- modal -->
+            <div class="position-fixed modale d-none">
+                <div class="modal-box">
+                    <div class="modal-content">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2>Homer Simpson</h2>
+                            <div class="modal-close d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/close.svg" alt="close">
+                            </div>
+                        </div>
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, obcaecati tempore suscipit atque ullam quisquam accusantium repudiandae, autem temporibus molestias aut illo porro debitis esse. Quis et ex architecto labore.</p>
+                        <code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at possimus.</code>
+                    </div>
+                </div>
+            </div>
+
+        </main>
 
         <!-- script Bootstrap -->
         <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm' crossorigin='anonymous'></script>

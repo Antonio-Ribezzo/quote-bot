@@ -1,0 +1,57 @@
+html{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+header{
+    height: 15%;
+    background-color: #e9f45b;
+    color: #1212b2;
+}
+
+main{
+    height: 85%;
+    background-color: #6885e0;
+}
+
+.characters{
+    height: 10rem;
+    width: 10rem;
+    border: 2px solid #1212b2;
+    background-color: #a1d2ff;
+}
+
+.loading, .modale{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(161, 210, 255, 0.8);
+    z-index: 9999999;
+    color: #1212b2;
+}
+
+code{
+    color: #1212b2;
+}
+
+.modal-box{
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #1212b2;
+    max-width: 512px;
+    margin: 24px auto;
+}
+
+.modal-close{
+    background-color: #ffaafb;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border: 2px solid #1212b2;
+    cursor: pointer;
+}
+
